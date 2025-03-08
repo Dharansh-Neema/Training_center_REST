@@ -8,11 +8,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class Address {
     @NotNull(message = "detailed address is required")
-    public String detailedAddress;
+    private String detailedAddress;
     @NotNull(message = "city name is required")
-    public String city;
+    private String city;
     @NotNull(message = "state name is required")
-    public String state;
+    private String state;
     @NotNull(message = "pincode is required")
-    public String pincode;
+    private String pincode;
 }

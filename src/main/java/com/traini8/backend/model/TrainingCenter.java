@@ -18,36 +18,36 @@ import lombok.Data;
 @Data
 public class TrainingCenter {
     @Id
-    public String id;
+    private String id;
 
     @NotNull(message = "center name is required")
     @Size(message = "center name must be less tha 40 characters")
-    public String centerName;
+    private String centerName;
 
     @NotNull(message = "center code is required")
     @Size(min = 12,max = 12,message = "center code must be of 12 characters")
     @Pattern(regexp = "^[a-zA-Z0-9]{12}$", message = "center code must be alphanumeric")
-    public String centerCode;
+    private String centerCode;
 
     @NotNull(message = "Address is required")
-    public Address address;
+    private Address address;
 
-    public Integer capacity;
+    private Integer capacity;
 
-    public ArrayList<String> coursesOffered;
+    private ArrayList<String> coursesOffered;
 
     @Email(message = "Invalid email")
-    public String email;
+    private String email;
 
     @NotNull(message = "Phone number is required")
     @Size(min = 13, max = 13, message = "Phone number must be exactly 13 characters long.")
     @Pattern(regexp = "\\+\\d{12}", message = "Phone number must start with a '+' and have 12 digits following it.")
-    public String phone;
+    private String phone;
 
     @CreatedDate
-    public LocalDateTime createdOn;
+    private LocalDateTime createdOn;
 
     @LastModifiedDate
-    public LocalDateTime updatedOn;
+    private LocalDateTime updatedOn;
 
 }
