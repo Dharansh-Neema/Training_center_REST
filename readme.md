@@ -1,7 +1,7 @@
 # Backend_Traini8 Project
 
 ## Overview
-This project is an MVP for a registry of government-funded training centers built using Spring Boot and MongoDB. The application exposes RESTful APIs to:
+This project is built using Spring Boot and MongoDB. The application exposes RESTful APIs to:
 - **Create a Training Center:** `POST /api/v1/create/training-center`
 - **Retrieve All Training Centers:** `GET /api/v1/get/all/training-center`
 - **Search Training Centers by Name:** `GET /api/v1/search/training-center?name={centerName}`
@@ -56,15 +56,21 @@ The project follows a layered architecture with clear separation of concerns:
 4. **Testing with Postman:**
    A Postman collection is included in the repository  to help test the API endpoints. Import the collection into Postman and run the available requests.
 
-## API Endpoints
-- **POST /api/v1/create/training-center**  
-  Create a new training center with validated input.
+[//]: # (## API Endpoints)
 
-- **GET /api/v1/get/all/training-center**  
-  Retrieve all training centers stored in the database.
+[//]: # (- **POST /api/v1/create/training-center**  )
 
-- **GET /api/v1/search/training-center?name={centerName}**  
-  Search for training centers by a partial or full name (case-insensitive).
+[//]: # (  Create a new training center with validated input.)
+
+[//]: # ()
+[//]: # (- **GET /api/v1/get/all/training-center**  )
+
+[//]: # (  Retrieve all training centers stored in the database.)
+
+[//]: # ()
+[//]: # (- **GET /api/v1/search/training-center?name={centerName}**  )
+
+[//]: # (  Search for training centers by a partial or full name &#40;case-insensitive&#41;.)
 
 ## Screenshots
 Below are some screenshots from Postman demonstrating the API responses:
