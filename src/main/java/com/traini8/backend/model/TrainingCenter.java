@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import lombok.Data;
 @Document()
 @Data
-public class trainigCenter {
+public class TrainingCenter {
     @Id
     public String id;
 
