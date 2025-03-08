@@ -6,8 +6,6 @@ This project is an MVP for a registry of government-funded training centers buil
 - **Retrieve All Training Centers:** `GET /api/v1/get/all/training-center`
 - **Search Training Centers by Name:** `GET /api/v1/search/training-center?name={centerName}`
 
-The project features robust validation, custom exception handling, and automatic auditing (i.e., `createdOn` and `updatedOn` fields) using Spring Data MongoDB.
-
 ## Project Structure
 The project follows a layered architecture with clear separation of concerns:
 - **config:** MongoDB configuration and application settings.
@@ -20,25 +18,18 @@ The project follows a layered architecture with clear separation of concerns:
 ## Setup Instructions (Local)
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/Backend_Traini8_Dharansh.git
+   git clone https://github.com/Dharansh-Neema/Backend_Traini8_Dharansh
    cd Backend_Traini8_Dharansh
    ```
 
-2. **Configure MongoDB:**
-    - Ensure MongoDB is installed and running on your local machine.
-    - Update the connection details in `src/main/resources/application.properties` (or `application.yml`) if necessary. For example:
-      ```properties
-      spring.data.mongodb.uri=mongodb://localhost:27017/traini8DB
-      server.port=8097
-      ```
 
-3. **Build the Project:**
+2. **Build the Project:**
    Use Maven to build the project:
    ```bash
-   mvn clean package
+   mvn clean install
    ```
 
-4. **Run the Application:**
+3. **Run the Application:**
    You can run the application either by executing the jar or directly from your IDE:
    ```bash
    mvn spring-boot:run
@@ -62,7 +53,7 @@ The project follows a layered architecture with clear separation of concerns:
 
 [//]: # (      docker run -p 8097:8097 traini8-backend)
       
-5. **Testing with Postman:**
+4. **Testing with Postman:**
    A Postman collection is included in the repository  to help test the API endpoints. Import the collection into Postman and run the available requests.
 
 ## API Endpoints
