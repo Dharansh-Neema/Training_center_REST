@@ -1,5 +1,6 @@
 package com.traini8.backend.model;
 
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
@@ -25,7 +26,7 @@ public class TrainingCenter {
 
     @NotNull(message = "center code is required")
     @Size(min = 12,max = 12,message = "center code must be of 12 characters")
-    @Pattern(regexp = "^[a-zA-Z0-9]{12}$", message = "Center code must be alphanumeric")
+    @Pattern(regexp = "^[a-zA-Z0-9]{12}$", message = "center code must be alphanumeric")
     public String centerCode;
 
     @NotNull(message = "Address is required")
@@ -35,6 +36,7 @@ public class TrainingCenter {
 
     public ArrayList<String> coursesOffered;
 
+    @Email(message = "Invalid email")
     public String email;
 
     @NotNull(message = "Phone number is required")
