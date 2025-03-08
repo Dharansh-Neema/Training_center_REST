@@ -25,4 +25,9 @@ public class TrainingCenterImpl implements TrainingCenterService {
     {
         return trainingCenterRepository.findAll();
     }
+
+    @Override
+    public List<TrainingCenter> getAllTrainingCenter(String centerName){
+        return trainingCenterRepository.findByCenterNameContainingIgnoreCase(centerName);
+    }
 }

@@ -10,4 +10,6 @@ public interface TrainingCenterService {
     public TrainingCenter createTrainingCenter(TrainingCenter trainingCenter);
 
     public List<TrainingCenter> getAllTrainingCenter();
+
+    public List<TrainingCenter> getAllTrainingCenter(String centerName);
 }
