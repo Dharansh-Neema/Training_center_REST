@@ -1,4 +1,4 @@
-# Backend_Traini8 Project
+# REST API's for Training Center
 
 ## Overview
 This project is built using Spring Boot and MongoDB. The application exposes RESTful APIs to:
